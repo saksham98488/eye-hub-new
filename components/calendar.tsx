@@ -53,8 +53,8 @@ const Calendar: React.FC<CalendarProps> = ({ className, classNames, showOutsideD
       }}
       components={{
         // @ts-ignore or use `as any`
-        IconLeft: (props) => <ChevronLeft className={cn("size-4")} {...props} />,
-        IconRight: (props) => <ChevronRight className={cn("size-4")} {...props} />,
+        IconLeft: (props: any) => <ChevronLeft className={cn("size-4")} {...props} />,
+        IconRight: (props: any) => <ChevronRight className={cn("size-4")} {...props} />,
       } as any}
       {...props}
     />
